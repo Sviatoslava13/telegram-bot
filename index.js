@@ -1,12 +1,14 @@
 import express from 'express';
 import dotenv from 'dotenv';
-
+import cors from 'cors';
 dotenv.config();
 
 const app = express();
 
 const TELEGRAM_TOKEN = process.env.TELEGRAM_TOKEN;
 const CHAT_ID = process.env.TELEGRAM_CHAT_ID;
+
+app.use(cors()) 
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
