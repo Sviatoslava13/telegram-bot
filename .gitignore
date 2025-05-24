@@ -1,0 +1,19 @@
+# Node.js
+node_modules/
+.env
+*.log
+npm-debug.log*
+
+# VS Code
+.vscode/
+
+# MacOS
+.DS_Store
+
+# Logs
+logs/
+*.log
+
+# Optional
+.env.local
+.env.*.local
