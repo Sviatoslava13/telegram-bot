@@ -11,6 +11,7 @@ const CHAT_ID = process.env.TELEGRAM_CHAT_ID;
 app.use(cors());
 
 app.use(express.json());
+
 app.use(express.urlencoded({ extended: true }));
 
 app.post("/send", async (req, res) => {
